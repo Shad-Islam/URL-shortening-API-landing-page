@@ -1,44 +1,67 @@
-import "./App.css";
+import React from "react";
+import { useState } from "react";
+import {
+  GlobalStyles,
+  Container,
+  Navbar,
+  NavLeft,
+  Menu,
+  MenuList,
+  MenuItems,
+  Item,
+  NavRight,
+  LoginButton,
+  SignupButton,
+  MenuIcon,
+} from "./components/styles/global.style"; // Replace with the correct file path
 import { ReactComponent as Logo } from "./images/logo.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useState } from "react";
 
 function App() {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
 
-  function toggleMenu() {
+  const toggleMenu = () => {
     setIsMenuVisible(!isMenuVisible);
-  }
+  };
 
   return (
-    <div className="App">
-      <div className="conatiner">
-        <nav>
-          <div className="nav-left">
+    <>
+      <GlobalStyles />
+      <Container>
+        <Navbar>
+          <NavLeft>
             <div className="logo">
+              {/* Assuming Logo is just an image */}
               <Logo />
             </div>
-            <div className={`${isMenuVisible ? "menu" : "menu-list"}`}>
-              <ul>
-                <li> Features</li>
-                <li> Pricing</li>
-                <li> Resources</li>
-              </ul>
-            </div>
-          </div>
+            <Menu isMenuVisible={isMenuVisible}>
+              <MenuList isMenuVisible={isMenuVisible}>
+                <MenuItems>
+                  <Item href="#">Features</Item>
+                </MenuItems>
+                <MenuItems>
+                  <Item href="#">Pricing</Item>
+                </MenuItems>
+                <MenuItems>
+                  <Item href="#">Resources</Item>
+                </MenuItems>
+              </MenuList>
+            </Menu>
+          </NavLeft>
 
-          <div className="nav-right">
-            <a href="#" className="login-button">
+          <NavRight>
+            <LoginButton href="#" className="login-button">
               Log In
-            </a>
-            <button className="signup-button">Sign Up</button>
-            <div className="menu-icon" id="menu-icon" onClick={toggleMenu}>
+            </LoginButton>
+            <SignupButton className="signup-button">Sign Up</SignupButton>
+            <MenuIcon id="menu-icon" onClick={toggleMenu}>
+              {/* Assuming GiHamburgerMenu is an SVG icon */}
               <GiHamburgerMenu />
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
+            </MenuIcon>
+          </NavRight>
+        </Navbar>
+      </Container>
+    </>
   );
 }
 
