@@ -1,8 +1,15 @@
 import "./App.css";
 import { ReactComponent as Logo } from "./images/logo.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
 
 function App() {
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+
+  function toggleMenu() {
+    setIsMenuVisible(!isMenuVisible);
+  }
+
   return (
     <div className="App">
       <div className="conatiner">
@@ -11,7 +18,7 @@ function App() {
             <div className="logo">
               <Logo />
             </div>
-            <div className="menu">
+            <div className={`${isMenuVisible ? "menu" : "menu-list"}`}>
               <ul>
                 <li> Features</li>
                 <li> Pricing</li>
@@ -25,7 +32,7 @@ function App() {
               Log In
             </a>
             <button className="signup-button">Sign Up</button>
-            <div className="menu-icon">
+            <div className="menu-icon" id="menu-icon" onClick={toggleMenu}>
               <GiHamburgerMenu />
             </div>
           </div>

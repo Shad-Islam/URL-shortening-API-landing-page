@@ -27,7 +27,7 @@ nav .nav-left{
   background-color: aqua;
 }
 
-nav .nav-left .menu{
+nav .nav-left .menu {
   position: relative;
 }
 
@@ -110,6 +110,10 @@ nav .nav-right .menu-icon{
     right:23px;
     position: absolute;
     flex-direction: column;
+  }
+
+  nav .nav-left .menu-list{
+    display: none;
   }
 
         /* nav right */
