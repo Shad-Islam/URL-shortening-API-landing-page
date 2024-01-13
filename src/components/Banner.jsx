@@ -1,9 +1,12 @@
 import React from "react";
+import { BannerContainer } from "./styles/banner.style";
 
-function Banner() {
+function Banner({ isMenuVisible }) {
   return (
     <div>
-      <h1>Hello</h1>
+      <BannerContainer isMenuVisible={isMenuVisible}>
+        <h1>Hello</h1>
+      </BannerContainer>
     </div>
   );
 }

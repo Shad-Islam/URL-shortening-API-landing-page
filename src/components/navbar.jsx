@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import {
   Menu,
   Item,
@@ -15,9 +14,7 @@ import {
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ReactComponent as Logo } from "../images/logo.svg";
 
-function NavbarSection() {
-  const [isMenuVisible, setIsMenuVisible] = useState(false);
-
+function NavbarSection({ isMenuVisible, setIsMenuVisible }) {
   const toggleMenu = () => {
     setIsMenuVisible(!isMenuVisible);
   };

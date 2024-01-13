@@ -5,8 +5,9 @@ const NavbarContainer = styled.nav`
   display: flex;
   width: 1300px;
   padding: 20px;
+  margin: 0 auto;
   justify-content: space-between;
-  /* background-color: palegoldenrod; */
+  background-color: palegoldenrod;
 
   @media (max-width: 600px) {
     width: 100%;
@@ -40,6 +41,7 @@ const MenuList = styled.ul`
     right: 23px;
     position: absolute;
     flex-direction: column;
+    background: green;
     display: ${(props) => (props.isMenuVisible ? "flex" : "none")};
   }
 `;
