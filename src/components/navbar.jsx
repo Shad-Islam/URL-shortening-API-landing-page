@@ -3,7 +3,6 @@ import { useState } from "react";
 import {
   Menu,
   Item,
-  Navbar,
   NavLeft,
   NavRight,
   MenuIcon,
@@ -11,6 +10,7 @@ import {
   MenuItems,
   LoginButton,
   SignupButton,
+  NavbarContainer,
 } from "./styles/nav.style";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ReactComponent as Logo } from "../images/logo.svg";
@@ -23,7 +23,7 @@ function NavbarSection() {
   };
   return (
     <>
-      <Navbar>
+      <NavbarContainer>
         <NavLeft>
           <div className="logo">
             {/* Assuming Logo is just an image */}
@@ -54,7 +54,7 @@ function NavbarSection() {
             <GiHamburgerMenu />
           </MenuIcon>
         </NavRight>
-      </Navbar>
+      </NavbarContainer>
     </>
   );
 }

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 // Navbar styled component
-const Navbar = styled.nav`
+const NavbarContainer = styled.nav`
   display: flex;
   width: 1300px;
   padding: 20px;
@@ -126,7 +126,6 @@ const MenuIcon = styled.div`
 export {
   Menu,
   Item,
-  Navbar,
   NavLeft,
   MenuList,
   MenuIcon,
@@ -134,4 +133,5 @@ export {
   MenuItems,
   LoginButton,
   SignupButton,
+  NavbarContainer,
 };

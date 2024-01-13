@@ -1,4 +1,5 @@
-import NavbarSection from "./components/navbar";
+import Banner from "./components/Banner.jsx";
+import NavbarSection from "./components/Navbar.jsx";
 import { GlobalStyles, Container } from "./components/styles/global.style";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <GlobalStyles />
       <Container>
         <NavbarSection />
+        <Banner />
       </Container>
     </>
   );
