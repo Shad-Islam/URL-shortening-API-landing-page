@@ -3,10 +3,13 @@ import {
   BannerText,
   BannerLeft,
   BannerRight,
+  BannerImage,
   BannerButton,
   BannerHeading,
   BannerContainer,
 } from "./styles/banner.style";
+// import { ReactComponent as IllustrationWorking } from "../images/illustrationWorking.svg";
+import illustrationWorking from "../images/illustrationWorking.svg";
 
 function Banner({ isMenuVisible }) {
   return (
@@ -21,7 +24,8 @@ function Banner({ isMenuVisible }) {
           <BannerButton>Get Started</BannerButton>
         </BannerLeft>
         <BannerRight>
-          
+          {/* <IllustrationWorking /> */}
+          <BannerImage src={illustrationWorking} alt="" />
         </BannerRight>
       </BannerContainer>
     </div>
