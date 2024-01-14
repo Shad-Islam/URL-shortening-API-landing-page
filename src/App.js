@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Search from "./components/Search.jsx";
 import Banner from "./components/Banner.jsx";
 import NavbarSection from "./components/Navbar.jsx";
 import { GlobalStyles, Container } from "./components/styles/global.style";
@@ -14,6 +15,7 @@ function App() {
           setIsMenuVisible={setIsMenuVisible}
         />
         <Banner isMenuVisible={isMenuVisible} />
+        <Search />
       </Container>
     </>
   );

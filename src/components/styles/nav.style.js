@@ -41,7 +41,7 @@ const MenuList = styled.ul`
     right: 23px;
     position: absolute;
     flex-direction: column;
-    background: green;
+    // background: green;
     display: ${(props) => (props.isMenuVisible ? "flex" : "none")};
   }
 `;

@@ -5,15 +5,15 @@ const BannerContainer = styled.div`
   width: 1300px;
   padding: 20px;
   display: flex;
-  margin: 0 auto;
-  //   background-color: green;
+  margin: 0 auto 100px;
+  background-color: green;
   transition: all linear 0.2s;
-  
+
   @media (max-width: 600px) {
     gap: 20px;
     width: 100%;
     flex-direction: column-reverse;
-    margin-top: ${(props) => (props.isMenuVisible ? "150px" : "100px")};
+    margin-top: ${(props) => (props.isMenuVisible ? "200px" : "100px")};
   }
 `;
 
