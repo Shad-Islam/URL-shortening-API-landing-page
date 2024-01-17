@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Feature from "./components/Feature";
-import Search from "./components/Search";
+// import Search from "./components/Search";
 import Banner from "./components/Banner";
+import Feature from "./components/Feature";
 import NavbarSection from "./components/Navbar";
 import { GlobalStyles, Container } from "./components/styles/global.style";
 
