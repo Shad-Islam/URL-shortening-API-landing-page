@@ -16,7 +16,7 @@ function App() {
           setIsMenuVisible={setIsMenuVisible}
         />
         <Banner isMenuVisible={isMenuVisible} />
-        {/* <Search /> */}
+        <Search />
         <Feature />
       </Container>
     </>
