@@ -1,6 +1,7 @@
 import { useState } from "react";
 // import Search from "./components/Search";
 import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 import Feature from "./components/Feature";
 import NavbarSection from "./components/Navbar";
 import { GlobalStyles, Container } from "./components/styles/global.style";
@@ -18,6 +19,7 @@ function App() {
         <Banner isMenuVisible={isMenuVisible} />
         <Search />
         <Feature />
+        <Footer />
       </Container>
     </>
   );
