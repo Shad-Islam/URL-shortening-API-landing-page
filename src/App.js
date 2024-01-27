@@ -12,10 +12,10 @@ function App() {
     <>
       <GlobalStyles />
       <Container>
-        {/* <NavbarSection
+        <NavbarSection
           isMenuVisible={isMenuVisible}
           setIsMenuVisible={setIsMenuVisible}
-        /> */}
+        />
         <Banner isMenuVisible={isMenuVisible} />
         {/* <Search />
         <Feature />
