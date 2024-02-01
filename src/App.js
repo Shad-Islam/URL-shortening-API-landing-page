@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import Search from "./components/Search";
+import Search from "./components/Search";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Feature from "./components/Feature";
@@ -17,9 +17,9 @@ function App() {
           setIsMenuVisible={setIsMenuVisible}
         />
         <Banner isMenuVisible={isMenuVisible} />
-        {/* <Search />
+         <Search />
         <Feature />
-        <Footer /> */}
+        <Footer /> 
       </Container>
     </>
   );
