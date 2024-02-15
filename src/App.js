@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Search from "./components/Search";
-import Banner from "./components/Banner";
+import Banner from "./components/banner";
 import Footer from "./components/Footer";
 import Feature from "./components/Feature";
 import NavbarSection from "./components/Navbar";
